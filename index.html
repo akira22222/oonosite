@@ -32,7 +32,7 @@
 			display:inline-block;
 			margin: 18px;
 			padding: 9px;
-			border-style: solid;
+			
 		}
 		.container {
 			display: flex;
@@ -58,25 +58,27 @@
 		<button onclick="changeStatus('member1')"> ボタン </button>
 		<p>町長　宇佐美　晃三<span id="member1">不在</span></p>
 		</div>
-
-	<div class="container">
+		<hr></hr>
+	
+		<div class="container">
 		<button onclick="changeStatus('member2')">ボタン</button>
 		<p>副町長　武藤　貞雄<span id="member2">不在</span></p>
-		
-		
+
 	</div>
+	<hr></hr>
+
 	<div class="container">
 		<button onclick="changeStatus('member3')">ボタン</button>
 		<p>教育長　桑原　浩美<span id="member3">不在</span></p>
-		
-		
+	
 	</div>
+	<hr></hr>
 	<div class="container">
 		<button onclick="changeStatus('member4')">ボタン</button>
 		<p>総務部長　加納　秀男<span id="member4">不在</span></p>
-		
-		
+
 	</div>
+	<hr></hr>
 	<script>
 		function changeStatus(name) {
 			var span = document.getElementById(name);
