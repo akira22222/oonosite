@@ -5,32 +5,75 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>大野町出退表示板</title>
+	<style>
+		h1 {
+			font-size: 36px;
+			text-align: center;
+		}
+		p {
+			font-size: 24px;
+			margin-left: 18px;
+		}
+		.button {
+			font-size: 24px;
+		}
+		button {
+			font-size: 18px;
+			text-align: right;
+			margin-left: 36px;
+			background-color: coral;
+			color: white;
+			height: 50px;
+			width: auto;
+			margin-top :18px;
+		}
+
+		div {
+			display: flex;
+			margin: 18px;
+			padding: 9px;
+			border-style: solid;
+			
+		}
+		span {
+			margin-left: 50px;
+		}
+		/* 在席状況の文字装飾　 */
+		#member1 { color: blue; }
+		#member2 { color: blue; }
+		#member3 { color: blue; }
+		#member4 { color: blue; }
+	</style>
 </head>
 
 <body>
 	<!-- AIチャットボットで作成 -->
 	<h1>大野町出退表示板</h1>
-	<p>「ボタン」をクリックし、在席状況を表示してください。</p>
+	<p>「ボタン」をクリックして、在席状況を表示してください。</p>
+	<hr></hr>
 	<div>
+		<button onclick="changeStatus('member1')"> ボタン </button>
+		<p>町長　宇佐美　晃三<span id="member1">不在</span></p>
 		
-		<p>町長　宇佐美　晃三:<span id="member1">不在</span></p>
-		<button onclick="changeStatus('member1')">ボタン</button>
-		<hr></hr>
+		
 	</div>
 	<div>
-		<p>副町長　武藤　貞雄：<span id="member2">不在</span></p>
 		<button onclick="changeStatus('member2')">ボタン</button>
-		<hr></hr>
+		<p>副町長　武藤　貞雄<span id="member2">不在</span></p>
+		
+		
 	</div>
 	<div>
-		<p>教育長　桑原　浩美：<span id="member3">不在</span></p>
 		<button onclick="changeStatus('member3')">ボタン</button>
-		<hr></hr>
+		<p>教育長　桑原　浩美<span id="member3">不在</span></p>
+		
+		
 	</div>
 	<div>
-		<p>総務部長　加納　秀男：<span id="member4">不在</span></p>
 		<button onclick="changeStatus('member4')">ボタン</button>
-		<hr></hr>
+		<p>総務部長　加納　秀男<span id="member4">不在</span></p>
+		
+		
 	</div>
 	<script>
 		function changeStatus(name) {
