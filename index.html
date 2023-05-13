@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>大野町出退表示板</title>
+</head>
+
+<body>
+	<!-- AIチャットボットで作成 -->
+	<h1>大野町出退表示板</h1>
+	<p>「ボタン」をクリックし、在席状況を表示してください。</p>
+	<div>
+		
+		<p>町長　宇佐美　晃三:<span id="member1">不在</span></p>
+		<button onclick="changeStatus('member1')">ボタン</button>
+		<hr></hr>
+	</div>
+	<div>
+		<p>副町長　武藤　貞雄：<span id="member2">不在</span></p>
+		<button onclick="changeStatus('member2')">ボタン</button>
+		<hr></hr>
+	</div>
+	<div>
+		<p>教育長　桑原　浩美：<span id="member3">不在</span></p>
+		<button onclick="changeStatus('member3')">ボタン</button>
+		<hr></hr>
+	</div>
+	<div>
+		<p>総務部長　加納　秀男：<span id="member4">不在</span></p>
+		<button onclick="changeStatus('member4')">ボタン</button>
+		<hr></hr>
+	</div>
+	<script>
+		function changeStatus(name) {
+			var span = document.getElementById(name);
+			if (span.innerHTML == "不在") {
+				span.innerHTML = "在席";
+			}  else {
+				span.innerHTML = "不在";
+			}
+		}
+	</script>
+</body>
+</html>
+
+<body>
+	
+</body>
+</html>
