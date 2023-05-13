@@ -14,12 +14,11 @@
 			font-size: 24px;
 			margin-left: 18px;
 		}
-		.button {
-			font-size: 24px;
-		}
+		
 		button {
-			font-size: 18px;
-			text-align: right;
+			display:inline-block;
+			font-size: auto;
+			text-align: left;
 			margin-left: 36px;
 			background-color: coral;
 			color: white;
@@ -29,12 +28,16 @@
 		}
 
 		div {
-			display: flex;
+			white-space: nowrap;
+			display:inline-block;
 			margin: 18px;
 			padding: 9px;
 			border-style: solid;
-			
 		}
+		.container {
+			display: flex;
+		}	
+		
 		span {
 			margin-left: 50px;
 		}
@@ -51,25 +54,24 @@
 	<h1>大野町出退表示板</h1>
 	<p>「ボタン」をクリックして、在席状況を表示してください。</p>
 	<hr></hr>
-	<div>
+	<div class="container">
 		<button onclick="changeStatus('member1')"> ボタン </button>
 		<p>町長　宇佐美　晃三<span id="member1">不在</span></p>
-		
-		
-	</div>
-	<div>
+		</div>
+
+	<div class="container">
 		<button onclick="changeStatus('member2')">ボタン</button>
 		<p>副町長　武藤　貞雄<span id="member2">不在</span></p>
 		
 		
 	</div>
-	<div>
+	<div class="container">
 		<button onclick="changeStatus('member3')">ボタン</button>
 		<p>教育長　桑原　浩美<span id="member3">不在</span></p>
 		
 		
 	</div>
-	<div>
+	<div class="container">
 		<button onclick="changeStatus('member4')">ボタン</button>
 		<p>総務部長　加納　秀男<span id="member4">不在</span></p>
 		
